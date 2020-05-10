@@ -1,0 +1,28 @@
+# Задача 4
+# import math
+# a = int(input("Введите целое положительное число:\n"))
+# digit = a
+# max_digit = int(math.fmod(int(a),int(10)))
+# min_digit = max_digit
+#
+# while (math.fmod(a, 10) >= 0) and (a >= 10):
+#     a = int(a / 10)
+#     temp = int(math.fmod(int(a),int(10)))
+#     if max_digit <= temp:
+#         max_digit = temp
+#     elif min_digit >= temp:
+#         min_digit = temp
+#
+# print(f"Вы ввели: {digit} \nmax {max_digit} \nmin {min_digit}")
+
+# Задача 5
+income = int(input("Введите сумму выручки:\n"))
+expenses = int(input("Введите сумму затрат:\n"))
+profit = income - expenses
+if profit > 0:
+    ebitda = (profit / income)
+    print(f"Поздравляем! Рентабельность:{ebitda:.2f}.")
+    staff_count = int(input("Сколько сотрудников в компании?:"))
+    profit_per_person = (ebitda * income) / staff_count
+    print(f"Сумма прибыли на 1 сотрудника:{profit_per_person}.")
+else: print("Ваша компания убыточна!")
