@@ -15,14 +15,16 @@
 #
 # print(f"Вы ввели: {digit} \nmax {max_digit} \nmin {min_digit}")
 
-# Задача 5
-income = int(input("Введите сумму выручки:\n"))
-expenses = int(input("Введите сумму затрат:\n"))
-profit = income - expenses
-if profit > 0:
-    ebitda = (profit / income)
-    print(f"Поздравляем! Рентабельность:{ebitda:.2f}.")
-    staff_count = int(input("Сколько сотрудников в компании?:"))
-    profit_per_person = (ebitda * income) / staff_count
-    print(f"Сумма прибыли на 1 сотрудника:{profit_per_person}.")
-else: print("Ваша компания убыточна!")
+
+# Задача 6
+a = int(input("Введите пробег спортсмена в первый день:\n"))
+b = int(input("Введите ожидаемый результат спортсмена:\n"))
+day = 1
+actual_result = a
+while actual_result < b:
+    actual_result = actual_result * 1.1
+    day += 1
+
+print(f"Спортсмен достиг ожидаемого результата на {day} день - не менее {b}км в день")
+
+
