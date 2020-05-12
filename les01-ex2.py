@@ -1,4 +1,4 @@
-#Задание №2
+# Задание №2
 
 import math
 sec_quantity = int(input("Введите число секунд:\n"))
